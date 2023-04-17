@@ -8,8 +8,23 @@ margin: 0;
 box-sizing: border-box;
 }
 
+/* Color Pallet */
+:root{
 
+/* ### Primary*/
 
+--PALEBLUE: hsl(225, 100%, 94%);
+--BRIGHTBLUE: hsl(245, 75%, 52%);
+
+/* ### Neutral */
+
+--VERYPALEBLUE: hsl(225, 100%, 98%);
+--DESATURATEDBLUE: hsl(224, 23%, 55%);
+--DARKBLUE: hsl(223, 47%, 23%);
+
+/* FONT FAMILY */
+font-family: 'Red Hat Display', sans-serif;
+}
 
 
 
