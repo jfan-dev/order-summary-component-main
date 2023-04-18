@@ -2,44 +2,178 @@
 
 /* CSS reset */
 * {
-padding: 0;
-border: 0;
-margin: 0;
-box-sizing: border-box;
+    padding: 0;
+    border: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 /* Color Pallet */
-:root{
+:root {
 
-/* ### Primary*/
+    /* ### Primary*/
 
---PALEBLUE: hsl(225, 100%, 94%);
---BRIGHTBLUE: hsl(245, 75%, 52%);
+    --PALEBLUE: hsl(225, 100%, 94%);
+    --BRIGHTBLUE: hsl(245, 75%, 52%);
 
-/* ### Neutral */
+    /* ### Neutral */
 
---VERYPALEBLUE: hsl(225, 100%, 98%);
---DESATURATEDBLUE: hsl(224, 23%, 55%);
---DARKBLUE: hsl(223, 47%, 23%);
+    --VERYPALEBLUE: hsl(225, 100%, 98%);
+    --DESATURATEDBLUE: hsl(224, 23%, 55%);
+    --DARKBLUE: hsl(223, 47%, 23%);
 
-/* FONT FAMILY */
-font-family: 'Red Hat Display', sans-serif;
+    /* FONT FAMILY */
+    font-family: 'Red Hat Display', sans-serif;
+    color: var(--DESATURATEDBLUE);
+}
+
+body {
+    background-color: var(--PALEBLUE);
+        background-image: url("images/pattern-background-mobile.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+.card {
+    border-radius: 20px;
+    height: 568px;
+    width: 327px;
+
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    background-color: white;
+
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+}
+
+img {
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+
+h1 {
+    color: var(--DARKBLUE);
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 18px;
+    margin-top: 32px;
+}
+
+p.description {
+    color: var(--DESATURATEDBLUE);
+    line-height: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    width: 270px;
+
+}
+
+.offer {
+    align-items: center;
+    background-color: var(--VERYPALEBLUE);
+    border-radius: 10px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    padding: 16px;
+    width: 280px;
 }
 
 
+.plan_type {
+    display: flex;
+    flex-flow: column;
+    transform: translateX(-15px);
+}
+
+.bold {
+    color: var(--DARKBLUE);
+    font-weight: 700;
+}
+
+button.change {
+    background: none;
+    color: var(--BRIGHTBLUE);
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.buttons {
+    display: flex;
+    flex-flow: column;
+}
+
+button.payment {
+    background-color: var(--BRIGHTBLUE);
+    border-radius: 10px;
+    box-shadow: 0 10px 35px -5px hsl(244, 84%, 69%);
+    color: white;
+    font-weight: 900;
+    height: 50px;
+    letter-spacing: 1px;
+    width: 280px;
+}
+
+button.cancel {
+    background-color: transparent;
+    color: var(--DESATURATEDBLUE);
+    font-weight: 900;
+    height: 70px;
+    justify-self: center;
+    letter-spacing: 1px;
+}
 
 
+@media screen and (min-width: 1080px) {
+    body {
+        background-color: var(--PALEBLUE);
+        background-image: url("images/pattern-background-desktop.svg");
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .card {
+        height: 700px;
+        width: 450px;
+        box-shadow: 0 10px 55px -30px var(--BRIGHTBLUE);
+    }
 
 
+    .offer {
+        width: 340px;
+        height: 96px;
+        margin-bottom: 25px;
+    }
 
+    .plan_type {
+        transform: translateX(-33px);
+    }
 
+    button.payment {
+        width: 340px;
+    }
 
+    button.cancel {
+        width: 340px;
+    }
 
+    h1 {
+        color: var(--DARKBLUE);
+        font-size: 28px;
+        font-weight: 900;
+        margin-bottom: 18px;
+        margin-top: 48px;
+    }
 
-
-
-
-
-
-
-
+    p.description {
+        line-height: 28px;
+        margin-bottom: 24px;
+        width: 340px;
+    }
+}
