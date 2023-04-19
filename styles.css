@@ -29,9 +29,9 @@
 
 body {
     background-color: var(--PALEBLUE);
-        background-image: url("images/pattern-background-mobile.svg");
-        background-repeat: no-repeat;
-        background-size: cover;
+    background-image: url("images/pattern-background-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .card {
@@ -97,16 +97,16 @@ p.description {
     font-weight: 700;
 }
 
+.buttons {
+    display: flex;
+    flex-flow: column;
+}
+
 button.change {
     background: none;
     color: var(--BRIGHTBLUE);
     font-weight: 700;
     text-decoration: underline;
-}
-
-.buttons {
-    display: flex;
-    flex-flow: column;
 }
 
 button.payment {
@@ -128,6 +128,25 @@ button.cancel {
     justify-self: center;
     letter-spacing: 1px;
 }
+
+button.change:hover {
+    color: rgba(118,108,241,255);
+    cursor: pointer;
+}
+
+button.payment:hover {
+    background-color: rgba(118,108,241,255);
+    cursor: pointer;
+}
+
+button.cancel:hover {
+    color: var(--DARKBLUE);
+    cursor: pointer;
+}
+
+
+
+
 
 
 @media screen and (min-width: 1080px) {
