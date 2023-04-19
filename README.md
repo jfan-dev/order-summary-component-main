@@ -14,14 +14,10 @@ Your users should be able to:
 
 ![Solution](design/order-summary-solution.jpg)
 
-### Screenshot
-
-![Solution Screenshot](images/QR%20code%20component.jpg)
-
 ### Links
 
-- Solution URL: [Github](https://github.com/jfan-dev/qr-code)
-- Live Site URL: [Github Pages](https://jfan-dev.github.io/qr-code/)
+- Solution URL: [Github](https://github.com/jfan-dev/order-summary-component-main)
+- Live Site URL: [Github Pages](https://jfan-dev.github.io/order-summary-component-main/)
 
 ### Built with
 
